@@ -1,0 +1,19 @@
+<ul id = "contacts">
+ <% @contacts.each do |f| %>
+   <td><%= f.firstname %></td>
+        <td><%= f.lastname %></td>
+        <td><%= f.birthday %></td>
+        <td><%= f.sex %></td>
+        <td><%= f.email %></td>
+        <td><%= f.phone %></td>
+        <td><%= f.address %></td>
+        <td><%= f.city %></td>
+        <td><%= f.province %></td>
+        <td><%= f.country %></td>
+        <td><%= f.postalcode %></td>
+  
+</ul>
+ <% end %>
+
+<p><%= link_to "Add new contact", {:action => 'new' }%></p>
+
